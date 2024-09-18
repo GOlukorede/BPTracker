@@ -67,13 +67,15 @@ To run this project locally, follow these steps:
 
 2. Create a feature branch:
 
-```git checkout -b feature/new-feature
-
+```
+git checkout -b feature/new-feature
 ```
 
 3. Commit your changes:
 
-`git commit -m 'Add some feature'`
+```git commit -m 'Add some feature'
+
+```
 
 4. Push the branch to your fork
 
@@ -94,6 +96,4 @@ git push origin feature/new-feature
 
 ---
 
-Ensure you replace the placeholders (`#link-to-deployed-site`, `#link-to-blog-article`, `#link-to-your-linkedin-profile`, etc.) with actual links.
-
-This template covers all the essential sections required for a professional `README.md` file.
+(`#https://www.linkedin.com/in/GOlukorede`)
