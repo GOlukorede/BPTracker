@@ -6,6 +6,14 @@
 
 Users can log in, view past records, track trends, and receive real-time feedback on whether their blood pressure is high, low, or normal. The application is built with Flask, SQLAlchemy, and uses modern web technologies for an intuitive and responsive experience.
 
+## Inspiration
+
+Creating this app was driven by the desire to address a simple yet crucial problem: how do people monitor their blood pressure in a way that’s easy to understand? In today’s world of health tech, I wanted to create an app that wasn’t bogged down by unnecessary complexity. Just the essentials – track, understand, and manage your blood pressure.
+
+One of the technical challenges I set out to solve was **handling real-time data feedback**. When a user inputs their blood pressure, they immediately get a categorized health status based on predefined thresholds. This had to be fast, accurate, and able to handle fluctuations.
+
+Another challenge I faced was designing an **intuitive UI** that would work across all devices, whether mobile or desktop, ensuring accessibility for all users, including those who may not be as tech-savvy.
+
 ## Deployed Application
 
 You can access the live version of the app at: [BP_TRACKER Deployed Site](#)
