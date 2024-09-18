@@ -1,0 +1,71 @@
+{% extends 'sample.html'%} {% block title %}home_page{% endblock title %} {%
+block content %}
+<div class="upper-home-cnt">
+  <div class="home-cnt">
+    <div>
+      <heading>
+        <h2 class="home-heading-primary">Take Control of Your Heart Health</h2>
+        <p class="home-texts">
+          Our app helps you track and manage your blood pressure readings,
+          providing valuable insights to support your cardiovascular health
+        </p>
+      </heading>
+      <content>
+        <p class="home-heading-tertiary">Features:</p>
+        <ul class="home-list">
+          <div>
+            <li>Track your blood pressure readings</li>
+            <li>Monitor your heart health trends</li>
+          </div>
+          <div>
+            <li>Receive personalized insights</li>
+            <li>Set reminders for medication</li>
+          </div>
+          <div>
+            <li>Share your data with your healthcare provider</li>
+          </div>
+        </ul>
+        <p class="home-heading-tertiary">Benefits:</p>
+        <ul>
+          <li>Improve your heart health</li>
+          <li>Reduce your risk of heart disease</li>
+          <li>Enhance your overall well-being</li>
+          <li>Empower yourself with knowledge</li>
+          <li>Take control of your health</li>
+        </ul>
+      </content>
+    </div>
+    <div class="home-img-cnt">
+      <div>
+        <img
+          class="home-img"
+          src="{{url_for('static', filename='img1.jpg')}}"
+          alt="Woman measuring her blood pressure"
+        />
+      </div>
+      <div>
+        <img
+          class="home-img"
+          src="{{url_for('static', filename='img2.jpg')}}"
+          alt="Woman measuring her blood pressure"
+        />
+      </div>
+      <div>
+        <img
+          class="home-img"
+          src="{{url_for('static', filename='img2.jpg')}}"
+          alt="Woman measuring her blood pressure"
+        />
+      </div>
+      <div>
+        <img
+          class="home-img"
+          src="{{url_for('static', filename='img4.jpg')}}"
+          alt="Woman measuring her blood pressure"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

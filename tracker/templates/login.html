@@ -1,0 +1,20 @@
+{% extends 'sample.html' %} {% block title %}login_page{% endblock title %} {%
+block content%}
+<div class="reg">
+  <form class="reg-center reg-test" method="POST">
+    {{ form.hidden_tag() }}
+    <h3>Already signed up?</h3>
+    <p>Please login here:</p>
+    {{ form.email.label(class='reg-font') }} <br />{{
+    form.email(class='reg-field') }} <br />{{
+    form.password.label(class='reg-font') }} <br />{{
+    form.password(class='reg-field helper-mb') }} <br />{{
+    form.submit(class='reg-btn helper-mb') }}
+    <br />
+    <h3>Not registered yet?</h3>
+    <p>Please register here &darr;</p>
+    <a href={{ url_for('register_page')}}> Register</a>
+  </form>
+  
+</div>
+{% endblock content%}

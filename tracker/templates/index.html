@@ -1,0 +1,27 @@
+{% extends 'sample.html'%} {% block title %}landing_page{% endblock title %} {%
+block home_type %}{{url_for('landing_page')}}{% endblock home_type%} {%block
+content %}
+<div class="container">
+  <div class="all-contents">
+    <div class="main-contents">
+      <h1 class="main-header">
+        BP Manager: Track, Analyze and Improve your heart health!
+      </h1>
+      <p class="main-text">
+        Transform your heart health with just a few taps! Our BP app provides
+        personalized insights, tracking, and guidance to help you achieve
+        optimal heart health. Join the millions using our app to take control of
+        their heart health!
+      </p>
+      <a class="sign-up" href="{{url_for('register_page')}}">Register</a>
+    </div>
+    <div class="image-contents">
+      <img
+        class="home-img"
+        src="{{url_for('static', filename='img2.jpg')}}"
+        alt="Woman measuring her blood pressure"
+      />
+    </div>
+  </div>
+</div>
+{% endblock content %}

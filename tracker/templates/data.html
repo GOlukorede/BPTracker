@@ -1,0 +1,26 @@
+{% extends 'sample.html' %} {% block title %}data_page{% endblock title %}{%
+block content%}
+<div class="data-cnt">
+  <div class="data-split">
+    <form class="data-form" method="POST">
+      {{ form.hidden_tag() }}
+      <h1 class="data-heading">Enter your BP readings</h1>
+      {{ form.systolic.label(class='data-form-txt') }} <br />{{
+      form.systolic(class='data-form-field') }}mmHg <br />{{
+      form.diastolic.label(class='data-form-txt') }} <br />{{
+      form.diastolic(class='data-form-field') }}mmHg <br />{{
+      form.pulse.label(class='data-form-txt') }} <br />{{
+      form.pulse(class='data-form-field') }}bpm <br />{{
+      form.submit(class='data-submit') }}
+      <br />
+    </form>
+    <div>
+      <h2>Below is your result</h2>
+      {% with messages=get_flashed_messages(category_filter=['bp_result'])%} {%
+      for message in messages %}
+      <div>{{ message|safe }}</div>
+      {% endfor%} {% endwith %}
+    </div>
+  </div>
+</div>
+{% endblock content%}
