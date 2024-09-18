@@ -13,7 +13,7 @@ load_dotenv()
 
 # Create an instance of the Flask class and set the configuration options
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user_bp.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
