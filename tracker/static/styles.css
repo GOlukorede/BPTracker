@@ -353,5 +353,5 @@ html {
 
 .upper-home-cnt {
   /* padding: 9.6rem 4.8rem; */
-  background-color: #f0b27a;
+  background-image: linear-gradient(to right, #f0b27a, #e67e22);
 }

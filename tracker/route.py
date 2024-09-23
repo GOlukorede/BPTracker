@@ -84,7 +84,9 @@ def data_page():
         def determine_bp(systolic, diastolic):
             # Determine the blood pressure category based on the systolic and diastolic values
             if systolic < 90 and diastolic < 60:
-                return '''<h2>Your blood pressure is LOW: HYPOTENSION!</h2>'
+                return '''
+              <h3>Below is your result!</h3> </br>
+              <h2>Your blood pressure is LOW: HYPOTENSION!</h2>'
 <h3>Recommendations for managing low blood pressure</h3>
 <p>
   While low blood pressure is often less concerning than high blood pressure,
@@ -107,6 +109,7 @@ def data_page():
 </ul>'''
             elif systolic < 120 and diastolic < 80:
                 return '''
+            <h3>Below is your result!</h3> </br>
             <h2>Normal Blood Pressure</h2>
 <h3>Normal Blood Pressure Recommendations</h3>
 <p>
@@ -129,6 +132,7 @@ def data_page():
             
             elif systolic < 130 and diastolic < 80:
                 return '''
+            <h3>Below is your result!</h3> </br>
             <h2>Elevated Blood Pressure: Pre-hypertension</h2>
 <h3>Recommendations for managing elevated blood pressure</h3>
 <p>
@@ -155,8 +159,9 @@ def data_page():
             
             elif systolic < 140 and diastolic < 90:
                 return '''
+            <h3>Below is your result!</h3> </br>
             <h2>Elevated Blood Pressure: Stage 1 Hypertension</h2>
-<h3>Recommendations for magaging stage 1 hypertension</h3>
+<h3>Recommendations for managing stage 1 hypertension</h3>
 <p>
   Managing hypertension Stage 1 is crucial for reducing the risk of serious
   health complications. By following these recommendations, adopting
@@ -180,6 +185,7 @@ def data_page():
             
             elif systolic < 180 and diastolic < 120:
                 return '''
+            <h3>Below is your result!</h3> </br>
             <h2>Elevated Blood Pressure: Stage 2 Hypertension</h2>
 <h3>Recommendations for managing stage 2 hypertension</h3>
 <p>
@@ -203,6 +209,7 @@ def data_page():
             
             else:
                 return '''
+            <h3>Below is your result!</h3> </br>
             <h2>Hypertensive Emergency!</h2>
 <h3>Immediate Actions During a Hypertensive Crisis</h3>
 <p>

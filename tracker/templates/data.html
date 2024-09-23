@@ -15,7 +15,6 @@ block content%}
       <br />
     </form>
     <div>
-      <h2>Below is your result</h2>
       {% with messages=get_flashed_messages(category_filter=['bp_result'])%} {%
       for message in messages %}
       <div>{{ message|safe }}</div>
