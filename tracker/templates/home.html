@@ -1,7 +1,7 @@
 {% extends 'sample.html'%} {% block title %}home_page{% endblock title %} {%
 block content %}
 <div class="upper-home-cnt">
-  <div class="home-cnt">
+  <d class="home-cnt">
     <div>
       <heading>
         <h2 class="home-heading-primary">Take Control of Your Heart Health</h2>
@@ -35,6 +35,12 @@ block content %}
         </ul>
       </content>
     </div>
+    <div class="image-contents">
+      <img
+        class="home-img-home"
+        src="{{url_for('static', filename='img2.jpg')}}"
+        alt="Woman measuring her blood pressure"
+      />
     </div>
     <div>
     </br>

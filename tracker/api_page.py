@@ -6,7 +6,7 @@ from flask_bcrypt import Bcrypt
 # Create an instance of the Api class
 bcrypt = Bcrypt()
 
-# Define the fields for the response data
+# Define the fields for the response data for the user
 user_fields = {
         'id': fields.Integer,
         'firstname': fields.String,
@@ -14,7 +14,7 @@ user_fields = {
         'email': fields.String
     }
 
-# Define the fields for the response data
+# Define the fields for the response data for the data
 data_fields = {
             'id': fields.Integer,
             'systolic': fields.Integer,
